@@ -7,7 +7,7 @@
 [Jim Comey, June 2017: A natural language processing story](/comey_page)  
 <img src="images/comey_testimony.jpg?raw=true" width="300" height="200">  
 
-[Ambassadors and democracies](/sample_page)  
+[Ambassadors and democracies](/ambassadors)  
 <img src="images/ambassadors.png?raw=true" width = "320" height = "170">
 
 ---
