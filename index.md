@@ -4,7 +4,7 @@
 
 ### Projects 
 
-[Jim Comey, June 2018: A natural language processing story](/sample_page)  
+[Jim Comey, June 2018: A natural language processing story](/comey_page)  
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
