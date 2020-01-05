@@ -24,7 +24,7 @@ To me, it seems like applying NLP techniques to transcripts of court proceedings
 - Each of the senators on the Select Intelligence Committee has taken part in many other hearings, as has Jim Comey. How do their performances compare across these different contexts?
 
 ### 0. Pre-processing  
-I removed a standard set of stopwords from the NLTK package, plus a few context-specific phrases that don't convey additional information: "ever said", "attorney general", "Mr Comey" among them. I also lemmatized the text (reduced words down to root, so that "was" and "been" or "ran" and "running", for example, would be recorded as the same word).  
+I removed a standard set of stopwords from the ```NLTK``` package, plus a few context-specific phrases that don't convey additional information: "ever said", "attorney general", and "Mr Comey" among them. I also lemmatized the text (reduced words down to root, so that "ran" and "running" would be recorded as the same word, as would "was" and "been").  
 
 **Some notes on pre-processing:**  
 - *Question-answer relationship*: In this analysis, I considered each question and response as independent of each other. However, sentiment and topic analyses that take the relationship into account could be useful. For example, does the sentiment of the question-answerer match that of the question-asker? Does one vary while the other remains constant? Are questions on certain topics more or less inclined to evoke sentiment-laden responses from the answerer?
