@@ -1,11 +1,11 @@
-title: I.S. # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  Hi! I'm Isha Shah, currently a quantitative public policy researcher, project coordinator, and questioner. I work for The Brookings Institution (link) and Columbia University. On the right you'll find my current projects (commissioned by no one other than the curious tyrant in my head), and projects I have contributed toward.
+title: Isha Shah
+logo: "/images/logo.png?raw=true" 
+description: > 
+  Hi! I'm Isha Shah, currently a quantitative public policy researcher, project coordinator, and questioner. I work for The Brookings Institution (link) and Columbia University. On the right you'll find my current personal projects, and projects I have contributed toward.
   <br><br>
   I studied neuroscience and economics at Barnard College, and am constantly questioning my life choices. I like talking to strangers, reading too many news articles, and trying to make sense of the world through pseudoscientific doodles.
   <br><br>
   <a href="https://www.linkedin.com/in/ishashah27/">View My LinkedIn Profile</a> 
   
 theme: jekyll-theme-minimal
-google_analytics: UA-000000-0 # your Google Analytics tracking ID here
+google_analytics: UA-155380510-1
