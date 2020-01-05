@@ -27,7 +27,15 @@ To me, it seems like applying NLP techniques to transcripts of court proceedings
 
 Without further ado, word clouds:
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+*Democratic senators*  
+<img src="images/rwc.png?raw=true"/>
+  
+*Republican senators*  
+<img src="images/dwc.png?raw=true"/>
+  
+*Comey*  
+<img src="images/comey.png?raw=true"/>
+
 
 ### 2. Assess assumptions on which statistical inference will be based
 
