@@ -17,15 +17,14 @@ To me, it seems like applying NLP techniques to transcripts of court proceedings
     
 **The current hypotheses:**  
 - Republican senators may treat Comey more favorably than their Democratic counterparts. Comey has been vocal in confirming that the president is not under investigation and has also served under other Republican presidents as attorney general, making him perhaps a sympathetic figure within the Republican party. Democrats may be more willing to take a more aggressive tack toward his questioning - many may believe that it was Comey’s announcement of the re-opening of an investigation against Hillary Clinton, the Democratic presidential candidate, that led to the party’s loss in the 2016 election. *(Method: sentiment analysis) *
-- The possibility that there is a distinction in the topic and tone of questioning between senators of different parties also introduces the opportunity to do a supervised learning exercise in order to identify the party of the questioner. If a well-tuned interpretable machine learning model can predict the party of a questioner above the level of chance, it could reveal distinctions between parties and senators that are not apparent from qualitative analysis. *(Method: supervised classification)*
+- The possibility that there is a distinction in the topic and tone of questioning between senators of different parties also introduces the opportunity to do a supervised learning exercise in order to identify the party of the questioner. If a well-tuned interpretable machine learning model can predict the party of a questioner above the level of chance, it could reveal distinctions between parties and senators that are not apparent from qualitative analysis. *(Method: supervised classification)*  
 **Questions for future analysis:**  
 - Which topics do Republican and Democratic senators focus on? The answers yielded by an NLP analysis would be useful to compare to those of human readers, to determine if topic modeling techniques can parse this sort of testimony well enough to be applied to large numbers of testimonies at once. While human interpretations may be more accurate for a single testimony, research that requires reading through volumes, perhaps for a historical analysis, could be helped tremendously by machine learning techniques - if they perform well enough.
 - Each of the senators on the Select Intelligence Committee has taken part in many other hearings, as has Jim Comey. How do their performances compare across these different contexts?
-- 
 
 ### 1. Word clouds
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Without further ado, word clouds:
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
