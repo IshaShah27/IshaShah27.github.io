@@ -44,7 +44,7 @@ Without further ado, word clouds:
 *Comey*  
 <img src="images/comey.png?raw=true"/>
 
-A few quick observations:  
+**A few quick observations:**  
 - While senators of both parties feature the word investigation quite prominently, there seems to be a much greater diversity of words that appear with some frequency in the Republican word cloud than the one for Democrats. This could mean that when Democratic senators questioned Comey, they tended to make specific references to a limited set of discrete topics: “Flynn” (the investigation of Michael Flynn, a former Trump campaign aide), “dinner”  and “meeting” (the dinner Trump and Comey had together in which Comey claims the president asked for his loyalty, and “session” and “recusal” (in reference to Trump’s dissatisfaction with the recusal of Jeff Sessions, attorney general, from the Russia investigation).
 - In contrast, the smaller size and greater number of the words in the Republican word cloud suggest that Republicans were perhaps more general in their questioning style and broader in the topics they covered – the same terms that are prominent in the Democratic word cloud highlighted above are much less so in the Republican word cloud, and instead words like “thing,” “conversation” (rather than “meeting” or “dinner”) appear. There are also fewer proper nouns in the Republican word cloud than the Democratic one, suggesting that their questioning may not have been quite as specific.
 - In clear contrast to either of the senators’ word clouds, Comey’s contains considerably more words that suggest uncertainty, and they are featured prominently: “don’t know”, “something”, “well”, “thing”, “hope”, “might”, “don’t remember". This is also likely the case because Comey is more likely to convey how he felt or remembered his event – in other words, personally experienced it, rather than reporting an account that is as clear as that of a third-party observer. 
@@ -53,11 +53,13 @@ A few quick observations:
 ### 2. Sentiment analysis  
 
 *AFINN sentiment score:*  
+<table>
 | Group      | AFINN average score |
 |------------|---------------------|
 | Comey      | 0.145               |
 | Democrat   | 0.028               |
 | Republican | 0.069               |
+</table>
   
 *NRC Emotion Lexicon:*  
 | Group      | Anger | Fear  | Disgust |
