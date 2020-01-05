@@ -59,8 +59,7 @@ Many senators of both political parties have personal or professional relationsh
 4. NRC VAD (Valence-Arousal-Dominance) lexicon, a dictionary that contains 20,000 words that are classified on a 0-1 continuous scale on valence, dominance, and arousal, which are three scales of meanings for words. Valence is on the positive-negative scale, dominance is on the dominant-submissive scale, and arousal is on the active-passive scale.  
 All measures are averaged over statement length.
 
-*AFINN:*  
-AFINN scores for almost every group are almost exactly in the middle of the scale, indicating a tone that is neither positive nor negative. Comey has the highest AFINN average score, 0.145, which is still rather neutral, but could suggest that his responses used more emotionally charged terms than questioners of either party. The score difference between Republicans and Democrats (0.041 higher for Republicans) seems negligible, especially considering that the average valence values are so small to begin with.
+***AFINN:*** AFINN scores for almost every group are almost exactly in the middle of the scale, indicating a tone that is neither positive nor negative. Comey has the highest AFINN average score, 0.145, which is still rather neutral, but could suggest that his responses used more emotionally charged terms than questioners of either party. The score difference between Republicans and Democrats (0.041 higher for Republicans) seems negligible, especially considering that the average valence values are so small to begin with.
 
 *AFINN sentiment score:*  
 
@@ -70,16 +69,14 @@ AFINN scores for almost every group are almost exactly in the middle of the scal
 | Democrat   | 0.028               |
 | Republican | 0.069               |
   
-*VADER:*  
-From the VADER scores, we can see once again that there is not much variation in sentiment valence between Democratic and Republican senators, but that there is now a more significant difference between the senators and Comey, who has a higher average positive and negative score and lower average neutral score. Comey’s VADER neutral score, for example, is 0.708 compared to 0.893 for Democrats and 0.884 for Republicans; his negative score is 0.116 compared to 0.037 and 0.038 and his positive score is 0.176 compared to 0.069 and 0.078 for Democrats and Republicans respectively. These scores suggest Comey was speaking in more emotionally charged terms and support the implication of Comey’s word cloud, which suggested he was responding in a way that emphasized his personal viewpoint.
+***VADER:*** From the VADER scores, we can see once again that there is not much variation in sentiment valence between Democratic and Republican senators, but that there is now a more significant difference between the senators and Comey, who has a higher average positive and negative score and lower average neutral score. Comey’s VADER neutral score, for example, is 0.708 compared to 0.893 for Democrats and 0.884 for Republicans; his negative score is 0.116 compared to 0.037 and 0.038 and his positive score is 0.176 compared to 0.069 and 0.078 for Democrats and Republicans respectively. These scores suggest Comey was speaking in more emotionally charged terms and support the implication of Comey’s word cloud, which suggested he was responding in a way that emphasized his personal viewpoint.
   
 An analysis of VADER scores by sentiment also yielded some interesting results:  
 - The senator with the highest VADER neutral score, Democratic senator Kamala Harris of California (0.951) is known for being an especially direct prosecutor. It may make sense that she uses less charged language.
 - The senator with the second-lowest VADER neutral scores is Cornyn, a Republican senator from Texas (0.807). Cornyn is known to be a longtime critic of Hillary Clinton and a potential replacement for Comey for the role of FBI Chief, a position perhaps reflected in his slightly lower neutral and slightly higher positive score.
 - However, the lowest neutral score from a senator is that of Democratic senator Diane Feinstein of California (0.779), who also has the highest positive score of any senator, and even exceeds Comey (0.187). On the surface, this may also seem in line with expectations despite party affiliation: she has worked with Comey before, and has mentioned that she respects him. The crux is that she repeats a few phrases that the Comey says the president said in their discussion, a request for “honesty” and “loyalty”. While it is possible that senator Feinstein’s low neutral score and high positive score is driven by the spirit of her questions and tone, it may also be these quoted words, both of which have a positive valence.
   
-*NRC:*  
-The NRC Lexicons did not yield much additional information - scores on the Anger, Fear, and Digust scales were quite low, and the Valence, Arousal, and Dominance scores suggested that Comey's speech was less dominant than either of the senators (understandable, given his position as question-answerer), and lower in arousal and valence (a little less intuitive, given his more polar VADER scores).
+***NRC:*** The NRC Lexicons did not yield much additional information - scores on the Anger, Fear, and Digust scales were quite low, and the Valence, Arousal, and Dominance scores suggested that Comey's speech was less dominant than either of the senators (understandable, given his position as question-answerer), and lower in arousal and valence (a little less intuitive, given his more polar VADER scores).
   
 *NRC Emotion Lexicon:*  
 
