@@ -53,15 +53,15 @@ Without further ado, word clouds:
 ### 2. Sentiment analysis  
 
 *AFINN sentiment score:*  
-<html><table>
+
 | Group      | AFINN average score |
 |------------|---------------------|
 | Comey      | 0.145               |
 | Democrat   | 0.028               |
 | Republican | 0.069               |
-</table></html>
   
 *NRC Emotion Lexicon:*  
+
 | Group      | Anger | Fear  | Disgust |
 |------------|-------|-------|---------|
 | Comey      | 0.011 | 0.027 | 0.010   |
@@ -69,6 +69,7 @@ Without further ado, word clouds:
 | Republican | 0.023 | 0.036 | 0.016   |
   
 *NRC VAD (Valence-Arousal-Dominance) Lexicon:*  
+
 | Group      | Valence | Dominance | Arousal |
 |------------|---------|-----------|---------|
 | Comey      | 0.397   | 0.256     | 0.377   |
