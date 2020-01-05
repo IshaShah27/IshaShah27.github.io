@@ -13,7 +13,7 @@ The halls of the U.S. Congress, for example, are home to proceedings that often 
 
 To me, it seems like applying NLP techniques to transcripts of court proceedings could open up a whole new realm of analytical possibility. And yet, it is clear that they might have to be applied awkwardly, and that there may be some trial-and-error in finding the questions these techniques can and cannot be used to answer. So, I went for it.  
   
-  In order to explore some of the potential uses and pitfalls of applying NLP techniques to congressional testimonies, I used former FBI Chief James Comey's testimony before the Senate Intelligence Committee on June 8th, 2017. This testimony in particular provides a particularly rich corpus on which to test NLP techniques, because James Comey's political position in June 2017 was fascinatingly complicated. The purpose of the Congressional hearing was to learn about the circumstances of Comey's firing from his role as FBI Chief, which Comey suggested was due to his failure to comply with President Trump's requests for his "loyalty" in matters related to the Russia investigation, rather than his job performance.
+  In order to explore some of the potential uses and pitfalls of applying NLP techniques to congressional testimonies, I used former FBI Chief James Comey's testimony before the Senate Intelligence Committee on June 8, 2017. This testimony in particular provides a particularly rich corpus on which to test NLP techniques, because James Comey's political position in June 2017 was fascinatingly complicated. The purpose of the Congressional hearing was to learn about the circumstances of Comey's firing from his role as FBI Chief, which Comey suggested was due to his failure to comply with President Trump's requests for his "loyalty" in matters related to the Russia investigation, rather than his job performance.
     
 **The current hypotheses:**  
 - Republican senators may treat Comey more favorably than their Democratic counterparts. Comey has been vocal in confirming that the president is not under investigation and has also served under other Republican presidents as attorney general, making him perhaps a sympathetic figure within the Republican party. Democrats may be more willing to take a more aggressive tack toward his questioning - many may believe that it was Comey’s announcement of the re-opening of an investigation against Hillary Clinton, the Democratic presidential candidate, that led to the party’s loss in the 2016 election. *(Method: sentiment analysis)*
@@ -35,22 +35,32 @@ I removed a standard set of stopwords from the ```NLTK``` package, plus a few co
 
 Without further ado, word clouds:
 
-*Democratic senators*  
+*Republican senators*  
 <img src="images/rwc.png?raw=true"/>
   
-*Republican senators*  
+*Democratic senators*  
 <img src="images/dwc.png?raw=true"/>
   
 *Comey*  
 <img src="images/comey.png?raw=true"/>
 
-**A few quick observations:**  
+**Observations:**  
 - While senators of both parties feature the word investigation quite prominently, there seems to be a much greater diversity of words that appear with some frequency in the Republican word cloud than the one for Democrats. This could mean that when Democratic senators questioned Comey, they tended to make specific references to a limited set of discrete topics: “Flynn” (the investigation of Michael Flynn, a former Trump campaign aide), “dinner”  and “meeting” (the dinner Trump and Comey had together in which Comey claims the president asked for his loyalty, and “session” and “recusal” (in reference to Trump’s dissatisfaction with the recusal of Jeff Sessions, attorney general, from the Russia investigation).
 - In contrast, the smaller size and greater number of the words in the Republican word cloud suggest that Republicans were perhaps more general in their questioning style and broader in the topics they covered – the same terms that are prominent in the Democratic word cloud highlighted above are much less so in the Republican word cloud, and instead words like “thing,” “conversation” (rather than “meeting” or “dinner”) appear. There are also fewer proper nouns in the Republican word cloud than the Democratic one, suggesting that their questioning may not have been quite as specific.
 - In clear contrast to either of the senators’ word clouds, Comey’s contains considerably more words that suggest uncertainty, and they are featured prominently: “don’t know”, “something”, “well”, “thing”, “hope”, “might”, “don’t remember". This is also likely the case because Comey is more likely to convey how he felt or remembered his event – in other words, personally experienced it, rather than reporting an account that is as clear as that of a third-party observer. 
 - 	In future analyses of congressional testimonies, particularly those where Comey or the same senators are involved, it would be interesting to see whether the differences in word frequencies seen in this example persist. For example, are these Democratic senators always more likely to ask questions about specific people and events to a greater extent than the Republican senators, or would it change depending on the political nature of the testifier or the subject matter the hearing was on? It would also be interesting to see whether James Comey’s responses are similarly indicative of uncertainty and personal experience in other testimonies compared to this one, which was about events directly related to the circumstances of his firing.
 
 ### 2. Sentiment analysis  
+  
+Many senators of both political parties have personal or professional relationships to Comey, and those who do not are aware of his background, career, and role in the investigation of Hillary Clinton. These relationships and prior knowledge have the potential to influence the tone of questioning, and could offer information to evaluate the accuracy of sentiment analyses. I used four tools for analysis: 
+1. AFINN sentiment lexicon, a list of 2,477 English terms that were manually rated as either positive or negative on an integer scale of -5 to +5;
+2. VADER (Valence Aware Dictionary and sEntiment Reasoner), a both dictionary and rule-based sentiment analysis tool that gives an average positive, negative, and neutral score that sums to 1. VADER takes into account several complexities of language that AFINN, a simple dictionary-based approach, does not: it accounts for common negations, contractions, and degree-modifiers (“very” to convey an emotion more strongly, for example);
+3. NRC emotion lexicon, a dictionary that contains 10,000 words classified to eight emotions: anger, fear, disgust, joy, surprise, anticipation, sadness, and trust, where a 0 indicates absence and 1 indicates presence; and
+4. NRC VAD (Valence-Arousal-Dominance) lexicon, a dictionary that contains 20,000 words that are classified on a 0-1 continuous scale on valence, dominance, and arousal, which are three scales of meanings for words. Valence is on the positive-negative scale, dominance is on the dominant-submissive scale, and arousal is on the active-passive scale.  
+All measures are averaged over statement length.
+
+*AFINN:*  
+AFINN scores for almost every group are almost exactly in the middle of the scale, indicating a tone that is neither positive nor negative. Comey has the highest AFINN average score, 0.145, which is still rather neutral, but could suggest that his responses used more emotionally charged terms than questioners of either party. The score difference between Republicans and Democrats (0.041 higher for Republicans) seems negligible, especially considering that the average valence values are so small to begin with.
 
 *AFINN sentiment score:*  
 
@@ -59,6 +69,17 @@ Without further ado, word clouds:
 | Comey      | 0.145               |
 | Democrat   | 0.028               |
 | Republican | 0.069               |
+  
+*VADER:*
+From the VADER scores, we can see once again that there is not much variation in sentiment valence between Democratic and Republican senators, but that there is now a more significant difference between the senators and Comey, who has a higher average positive and negative score and lower average neutral score. Comey’s VADER neutral score, for example, is 0.708 compared to 0.893 for Democrats and 0.884 for Republicans; his negative score is 0.116 compared to 0.037 and 0.038 and his positive score is 0.176 compared to 0.069 and 0.078 for Democrats and Republicans respectively. These scores suggest Comey was speaking in more emotionally charged terms and support the implication of Comey’s word cloud, which suggested he was responding in a way that emphasized his personal viewpoint.
+  
+An analysis of VADER scores by sentiment also yielded some interesting results:  
+- The senator with the highest VADER neutral score, Democratic senator Kamala Harris of California (0.951) is known for being an especially direct prosecutor. It may make sense that she uses less charged language.
+- The senator with the second-lowest VADER neutral scores is Cornyn, a Republican senator from Texas (0.807). Cornyn is known to be a longtime critic of Hillary Clinton and a potential replacement for Comey for the role of FBI Chief, a position perhaps reflected in his slightly lower neutral and slightly higher positive score.
+- However, the lowest neutral score from a senator is that of Democratic senator Diane Feinstein of California (0.779), who also has the highest positive score of any senator, and even exceeds Comey (0.187). On the surface, this may also seem in line with expectations despite party affiliation: she has worked with Comey before, and has mentioned that she respects him. The crux is that she repeats a few phrases that the Comey says the president said in their discussion, a request for “honesty” and “loyalty”. While it is possible that senator Feinstein’s low neutral score and high positive score is driven by the spirit of her questions and tone, it may also be due to her quoting of these phrases, both of which have a positive valence.
+  
+*NRC:*  
+The NRC Lexicons did not yield much additional information - scores on the Anger, Fear, and Digust scales were quite low, and the Valence, Arousal, and Dominance scores suggested that Comey's speech was less dominant than either of the senators (understandable, given his position as question-answerer), and lower in arousal and valence (a little less intuitive, given his more polar VADER scores).
   
 *NRC Emotion Lexicon:*  
 
