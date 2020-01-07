@@ -7,7 +7,7 @@
 [Jim Comey, June 2017: A natural language processing story, volume I](/comey_page)  
 <img src="images/comey_testimony.jpg?raw=true" width="300" height="200">  
   
-On June 8, 2017, former FBI Chief James Comey testified before the Select Senate Intelligence committee about his understanding of the President's interests and questions regarding the investigation into Russian influence in the 2016 election and the meeting that preceded his firing. This is part I of a dive into his testimony using natural language processing techniques, in order to answer the larger question of how (and perhaps whether!) NLP techniques can be useful in analyzing court proceedings.
+On June 8, 2017, former FBI Chief James Comey testified before the Select Senate Intelligence committee about his understanding of the President's interests regarding the investigation into Russian influence in the 2016 election. This is part I of a dive into his testimony using natural language processing techniques, in order to answer the larger question of how (and perhaps whether!) NLP techniques can be useful in analyzing court proceedings.
 
 [Ambassadors and democracies](/ambassadors)  
 <img src="images/ambassadors.png?raw=true" width = "320" height = "170">
