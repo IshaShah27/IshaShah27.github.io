@@ -12,7 +12,7 @@ On June 8, 2017, former FBI Chief James Comey testified before the Select Senate
 The United States is nearly alone among advanced democracies in offering nearly one-third of its ambassadorships on average to individuals who are not career diplomats, but well-funded supporters of presidential campaigns. Does the share of ambassadors who are political appointees vary depending on the regime type of the host country?
 <!--<img src="images/ambassadors.png?raw=true" width = "320" height = "170">-->
   
-- In progress: A spatial analysis of the impact of NYC's clean bus fleet program on nitrous oxide emissions by neighborhood; an analysis of social-science-awareness among the public, and what social science leaders believe about the spread of their work; an investigation into how to update the work done by the [Sustainability Accountability Standards Board](https://www.sasb.org) using machine learning techniques
+- *In progress:* A spatial analysis of the impact of [NYC's Clean Fleet program](https://www1.nyc.gov/assets/sustainability/downloads/pdf/publications/NYC%20Clean%20Fleet_FINAL.pdf) on nitrous oxide emissions by neighborhood; an investigation into how to update the work done by the [Sustainability Accountability Standards Board](https://www.sasb.org) using machine learning techniques; an analysis of social-science-awareness among the public, and what social science leaders believe about the spread of their work
   
 ---
 <!--
@@ -31,5 +31,22 @@ Opportunity Industries is an examination of occupational transitions in U.S. met
 The Metro Monitor is a dashboard with meaning and heart. Carefully curated by the extremely conscientious and locally-engaged thinkers at the Brookings Metropolitan Policy Program, it contains indicators of the economic growth, prosperity, and inclusion of each of the 100 largest U.S. metro areas. I crunched the numbers and wrote snippets of this report, then stood back and admired Alec Friedhoff's visualization genius from afar.
   
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>. Thanks!</p>
+
+### Other writing
+  
+- [Economic growth may be the key to lasting growth and prosperity](https://www.brookings.edu/blog/the-avenue/2018/03/16/economic-inclusion-key-growth-prosperity/), published in Brookings Metropolitan Policy Program's The Avenue
+- [Full list of Brookings work](https://www.brookings.edu/search/?s=isha+shah&post_type=&topic=&pcp=program_metropolitan-policy-program&date_range=&start_date=&end_date=)
+  
+---
+
+### Current roles
+  
+- ***Research analyst***, [The Brookings Institution Center for Universal Education](https://www.brookings.edu/center/center-for-universal-education/)
+- ***Project coordinator***, "Cost of Human Rights Violations" project with [Rights CoLab](https://rightscolab.org) and [Data for Good from the Columbia Data Science Institute](https://datascience.columbia.edu);
+- ***Research assistant***, [Professor Gina Lovasi](https://drexel.edu/dornsife/academics/faculty/Gina%20Lovasi/), [Professor Ken Prewitt](https://sipa.columbia.edu/faculty-research/faculty-directory/kenneth-prewitt)
+- ***Digital intern and Python instructor***, [Columbia University Libraries Digital Scholarship unit](https://library.columbia.edu/services/digital-scholarship.html)
+
+---
+
+<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>. Thanks evanca!</p>
 <!-- Remove above link if you don't want to attibute -->
