@@ -10,30 +10,29 @@ Although the outcome of this exercise is likely intuitive, like Scoville's resul
 **Question:** Is there a connection between the type of ambassador that is appointed to a country (either career or political) and its regime type (i.e., are nations with autocratic parties more likely to have career foreign service officers as ambassadors, perhaps because they require more advanced expertise to maintain relations)?
     
 **The current hypotheses:**  
-- Republican senators may treat Comey more favorably than their Democratic counterparts. Comey has been vocal in confirming that the president is not under investigation and has also served under other Republican presidents as attorney general, making him perhaps a sympathetic figure within the Republican party. Democrats may be more willing to take a more aggressive tack toward his questioning - many may believe that it was Comey’s announcement of the re-opening of an investigation against Hillary Clinton, the Democratic presidential candidate, that led to the party’s loss in the 2016 election. *(Method: sentiment analysis)*
-- The possibility that there is a distinction in the topic and tone of questioning between senators of different parties also introduces the opportunity to do a supervised learning exercise in order to identify the party of the questioner. If a well-tuned interpretable machine learning model can predict the party of a questioner above the level of chance, it could reveal distinctions between parties and senators that are not apparent from qualitative analysis. *(Method: supervised classification)*  
   
 **Questions for future analysis:**  
-- Which topics do Republican and Democratic senators focus on? The answers yielded by an NLP analysis would be useful to compare to those of human readers, to determine if topic modeling techniques can parse this sort of testimony well enough to be applied to large numbers of testimonies at once. While human interpretations may be more accurate for a single testimony, research that requires reading through volumes, perhaps for a historical analysis, could be helped tremendously by machine learning techniques - if they perform well enough.
-- Each of the senators on the Select Intelligence Committee has taken part in many other hearings, as has Jim Comey. How do their performances compare across these different contexts?
 
 **The datasets:**
-1. Ambassador qualifications: The primary dataset is of the qualifications of each U.S. ambassador appointed from 1981 to 2018, where each row describes an individual appointee-year-country combination.
+1. *Ambassador qualifications:* The primary dataset is of the qualifications of each U.S. ambassador appointed from 1981 to 2018, where each row describes an individual appointee-year-country combination.
 - The variable for each appointee that is most relevant to my analysis is whether the appointee is a career foreign service officer. I also plan to use variables indicating whether they can speak the principal language of the country to which they have been appointed and whether they have experience in the host region in future analyses.
 - Other variables such as year of appointment and host country will be relevant for joining the primary and secondary datasets.
 - The dataset was assembled by Ryan Scoville, a researcher on international law at Marquette University Law School and a writer for the Lawfare blog.
-2. Regime type: The secondary dataset that represents whether a country is a democracy in a given year, for all sovereign countries for each year from 1800-2015. It also states whether the country was in democratic transition transition, the years it had held its democratic or non-democratic status, and whether women had the right to vote.
+2. *Regime type:* The secondary dataset that represents whether a country is a democracy in a given year, for all sovereign countries for each year from 1800-2015. It also states whether the country was in democratic transition transition, the years it had held its democratic or non-democratic status, and whether women had the right to vote.
 - Each row in the dataset represents a country in a single year, for each year from 1800 to 2015.
 - The variable that is most relevant to my analysis is "democracy," which indicates whether that nation had a democratic government in a given year
 - The source of the dataset is a group of researchers (Carles Boix, Michael Miller, and Sebastian Rosato) at Princeton University, Australian National University, and the University of Notre Dame, respectively, who introduced it in their paper in Comparative Politics "A Complete Dataset of Political Regimes, 1800-2007."
 
-### 0. Pre-processing  
-I removed a standard set of stopwords from the ```NLTK``` package, plus a few context-specific phrases that don't convey additional information: "ever said", "attorney general", and "Mr Comey" among them. I also lemmatized the text (reduced words down to their root, so that "ran" and "running" would be recorded as the same word, as would "was" and "been").  
+### Data cleaning 
+The most laborious part of this exercise was adjusting country names between the two datastes to allow for a match of the qualifications of an ambassador and the regime type of their host country in the year in which they were appointed. The assumptions I made in this process were minor:
+- The regime type of the host country in the year of the appointment is most relevant to the appointment decision, (earlier years are likely also important, but likely not as much as the appointment year)
+- For Brunei, Kosovo, Kiribati, the Marshall Islands, and Micronesia, there were several years in the 80s for which there was not a regime type listed; however, after some digging into the histories of each of these countries it seemed to me that all of them had the same regime type in these years as they did in the first year they appeared in the dataset. 
+- For Serbia and Yugoslavia, my unfamiliarity with the region and lack of international political consciousness in 2001 meant that I could not reconcile the ambassadors dataset, which had one appointee to each country, and the regime type dataset, which only had an entry for "Serbia and Montenegro" in this year. I dropped this record.
+- I also dropped the Holy See, since it did not appear at all in the regime type dataset.
 
-**Some notes on pre-processing:**  
-- *Question-answer relationship*: In this analysis, I considered each question and response independently. However, sentiment and topic analyses that take the relationship into account could be useful. For example, does the sentiment of the question-answerer match that of the question-asker? Does one vary while the other remains constant? Are questions on certain topics more or less inclined to evoke sentiment-laden responses from the answerer?
-- *Quote gremlins*: Often, when a senator asks a question of Comey, she or he would quote a part of his written record of his meeting with President Trump or the president's tweets. That a senator chooses to quote a certain conversation or document, or even chooses to quote at all, is valuable information - but more careful pre-processing is required to remove these instances where they interfere with the analysis (i.e., sentiment analysis), and include them where they are additive (topic modeling, perhaps).
-- *Introductory remarks*: For the purpose of this analysis, which was to determine the sentiment and style of the questioning portion of the proceedings, I did not include introductory remarks. These remarks are highly illustrative - senators often state directly their relationship with the person on the stand, and their opinion about the proceedings as a whole. Can these remarks perhaps serve as a check to an analysis of the questions, or provide useful context? Is excluding them willfully ignoring important background knowledge, or does an analysis of questions alone useful precisely because it lacks this information?
+### Aggregating
+
+After cleaning the data, we're off to the races!
 
 ### 1. Word clouds
 
