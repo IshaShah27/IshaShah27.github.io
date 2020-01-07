@@ -1,4 +1,4 @@
-## Portfolio
+### Portfolio
 
 ---
 
@@ -11,7 +11,9 @@ On June 8, 2017, former FBI Chief James Comey testified before the Select Senate
 - [Ambassadors and democracies](/ambassadors)  
 The United States is nearly alone among advanced democracies in offering nearly one-third of its ambassadorships on average to individuals who are not career diplomats, but well-funded supporters of presidential campaigns. Does the share of ambassadors who are political appointees vary depending on the regime type of the host country?
 <!--<img src="images/ambassadors.png?raw=true" width = "320" height = "170">-->
-
+  
+- In progress: A spatial analysis of the impact of NYC's clean bus fleet program on nitrous oxide emissions by neighborhood; an analysis of social-science-awareness among the public, and what social science leaders believe about the spread of their work; an investigation into how to update the work done by the [Sustainability Accountability Standards Board](https://www.sasb.org) using machine learning techniques
+  
 ---
 <!--
 [Project 3 Title](http://example.com/)
@@ -29,5 +31,5 @@ Opportunity Industries is an examination of occupational transitions in U.S. met
 The Metro Monitor is a dashboard with meaning and heart. Carefully curated by the extremely conscientious and locally-engaged thinkers at the Brookings Metropolitan Policy Program, it contains indicators of the economic growth, prosperity, and inclusion of each of the 100 largest U.S. metro areas. I crunched the numbers and wrote snippets of this report, then stood back and admired Alec Friedhoff's visualization genius from afar.
   
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
+<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>. Thanks!</p>
 <!-- Remove above link if you don't want to attibute -->
