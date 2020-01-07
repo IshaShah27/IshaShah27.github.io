@@ -9,9 +9,9 @@ Although the outcome of this exercise is likely intuitive, like Scoville's resul
 
 **Question:** Is there a connection between the type of ambassador that is appointed to a country (either career or political) and its regime type (i.e., are nations with autocratic parties more likely to have career foreign service officers as ambassadors, perhaps because they require more advanced expertise to maintain relations)?
     
-**The current hypotheses:**  
+**The current hypotheses:** I expect that non-democratic countries will have ambassadors who are more likely to be career diplomats, have familiarity with the language (despite fewer of these countries using a commonly-learned language in the U.S.), and have experience in the region. I also expect that the share of political vs career appointees for non-democratic countries will not vary much across presidents, unilke the overall share. Over time, I expect that an increasing share of ambassadors to these non-democratic countries will be career, rather than political appointees.
   
-**Questions for future analysis:**  
+**Questions for future analysis:** In the future, I would be interested in doing a simple regression analysis - perhaps a logit model where the dependent variable is the likelihood of being a political appointee, and the independent variables include regime type, campaign donations, familiarity with language, and regional experience. It might be interesting to do this by president or political party to see whether the coefficients change.
 
 **The datasets:**
 1. *Ambassador qualifications:* The primary dataset is of the qualifications of each U.S. ambassador appointed from 1981 to 2018, where each row describes an individual appointee-year-country combination.
@@ -25,8 +25,8 @@ Although the outcome of this exercise is likely intuitive, like Scoville's resul
 
 ### Data cleaning 
 The most laborious part of this exercise was adjusting country names between the two datastes to allow for a match of the qualifications of an ambassador and the regime type of their host country in the year in which they were appointed. The assumptions I made in this process were minor:
-- The regime type of the host country in the year of the appointment is most relevant to the appointment decision, (earlier years are likely also important, but likely not as much as the appointment year)
-- For Brunei, Kosovo, Kiribati, the Marshall Islands, and Micronesia, there were several years in the 80s for which there was not a regime type listed; however, after some digging into the histories of each of these countries it seemed to me that all of them had the same regime type in these years as they did in the first year they appeared in the dataset. 
+- The regime type of the host country in the year of the appointment is most relevant to the appointment decision, (earlier years are probably also important, but I assumed not as much as the appointment year)
+- For Brunei, Kosovo, Kiribati, the Marshall Islands, and Micronesia, there were several years in which they did not appear in the regime type dataset; however, after some digging into the histories of each of these countries it seemed to me that all of them had the same regime type in these years as they did in the first year they appeared in the dataset. I applied the regime type in their first chronological record to previous years.
 - For Serbia and Yugoslavia, my unfamiliarity with the region and lack of international political consciousness in 2001 meant that I could not reconcile the ambassadors dataset, which had one appointee to each country, and the regime type dataset, which only had an entry for "Serbia and Montenegro" in this year. I dropped this record.
 - I also dropped the Holy See, since it did not appear at all in the regime type dataset.
 
