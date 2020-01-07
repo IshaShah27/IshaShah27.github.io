@@ -1,4 +1,4 @@
-## U.S. ambassador expertise by host regime type
+## U.S. ambassador expertise by host country regime type
 *How do the qualifications of U.S. ambassadors differ by the regime type of their host country?*
 
 U.S. ambassadors largely come in two flavors: career and political appointees. Career diplomats have experience as Foreign Service Officers (FSOs) or have served in some other professional government capacity in the host country or region in which they have been appointed ambassador. Political appointees are supporters of the president do not have experience working in the State Department, although they are likely to be prominent in other domains: recent political appointees have included hoteliers and chiropractors. The practice of appointing an average of 30 percent of the nation's highest-ranking diplomats based on their political support of the president is ["aberrational among advanced democracies" according to Ryan Scoville, a scholar studying ambassadorial qualifications](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3333988).
