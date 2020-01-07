@@ -4,12 +4,14 @@
 
 ### Projects 
 
-[Jim Comey, June 2017: A natural language processing story](/comey_page)  
+[Jim Comey, June 2017: A natural language processing story, volume I](/comey_page)  
 <img src="images/comey_testimony.jpg?raw=true" width="300" height="200">  
+On June 8, 2017, former FBI Chief James Comey testified before the Select Senate Intelligence committee about his understanding of the President's interests and questions regarding the investigation into Russian influence in the 2016 election and the meeting that preceded his firing. This is part I of a dive into his testimony using natural language processing techniques, in order to answer the larger question of how (and perhaps whether!) NLP techniques can be useful in analyzing court proceedings.
 
 [Ambassadors and democracies](/ambassadors)  
 <img src="images/ambassadors.png?raw=true" width = "320" height = "170">
-
+The United States is nearly alone among advanced democracies in offering nearly one-third of its ambassadorships on average to individuals who are not career diplomats, but well-funded supporters of presidential campaigns. Does the share of ambassadors who are political appointees vary depending on the regime type of the host country?
+  
 ---
 <!--
 [Project 3 Title](http://example.com/)
