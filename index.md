@@ -9,7 +9,7 @@ On June 8, 2017, former FBI Chief James Comey testified before the Select Senate
 <!--<img src="images/comey_testimony.jpg?raw=true" width="300" height="200">-->  
 
 - [Ambassadors and democracies](/ambassadors)  
-The United States is nearly alone among advanced democracies in offering nearly one-third of its ambassadorships on average to individuals who are not career diplomats, but well-funded supporters of presidential campaigns. Does the share of ambassadors who are political appointees vary depending on the regime type of the host country?
+The United States is nearly alone among advanced democracies in offering nearly one-third of its ambassadorships on average to individuals who are not career diplomats, but well-heeled supporters of presidential campaigns. Does the share of ambassadors who are political appointees vary depending on the regime type of the host country?
 <!--<img src="images/ambassadors.png?raw=true" width = "320" height = "170">-->
   
 - *In progress:* A spatial analysis of the impact of [NYC's Clean Fleet program](https://www1.nyc.gov/assets/sustainability/downloads/pdf/publications/NYC%20Clean%20Fleet_FINAL.pdf) on nitrous oxide emissions by neighborhood; an investigation into how to update the work done by the [Sustainability Accountability Standards Board](https://www.sasb.org) using machine learning techniques; an analysis of social-science-awareness among the public, and what social science leaders believe about the spread of their work
