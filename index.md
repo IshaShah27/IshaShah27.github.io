@@ -42,7 +42,7 @@ The Metro Monitor is a dashboard with meaning and heart. Carefully curated by th
 ### Current roles
   
 - ***Research analyst***, [The Brookings Institution Center for Universal Education](https://www.brookings.edu/center/center-for-universal-education/)
-- ***Project coordinator***, "Cost of Human Rights Violations" project with [Rights CoLab](https://rightscolab.org) and [Data for Good from the Columbia Data Science Institute](https://datascience.columbia.edu);
+- ***Project coordinator***, "Cost of Human Rights Violations" project with [Rights CoLab](https://rightscolab.org) and [Data for Good from the Columbia Data Science Institute](https://datascience.columbia.edu)
 - ***Research assistant***, [Professor Gina Lovasi](https://drexel.edu/dornsife/academics/faculty/Gina%20Lovasi/), [Professor Ken Prewitt](https://sipa.columbia.edu/faculty-research/faculty-directory/kenneth-prewitt)
 - ***Digital intern and Python instructor***, [Columbia University Libraries Digital Scholarship unit](https://library.columbia.edu/services/digital-scholarship.html)
 
