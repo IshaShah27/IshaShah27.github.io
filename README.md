@@ -1,6 +1,6 @@
 ## Portfolio
 
-This is the readme for my portfolio site - feel free to poke around! (But you can find the site itself [here]).(https://ishashah27.github.io)
+This is the readme for my portfolio site! You can find the site itself [here](https://ishashah27.github.io).
 
 Thank you to @evanca for the template!
 
