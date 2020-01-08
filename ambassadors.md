@@ -38,7 +38,7 @@ After cleaning the data, we're off to the races!
   
 In order to first make sure that the differences Scoville noticed between career and political appointees are statistically significant, I used a simple t-test to compare the mean share of political/career appointees who had (1) proficiency in the principal language of their host country and (2) experience in the region.
   
-Both are statistically significant, with a p-value less than 0.01.
+Both are statistically significant, with a p-value less than 0.01.  
 <img src = "images/sigtest_fso.png?raw=true/">
 
 ### 2. Differences in likelihood of being an FSO, knowing language, and having regional experience by regime type
@@ -62,14 +62,14 @@ It looks like it didn't. The prob(F-statistic) = 0.271, above any p-value thresh
 
 <img src = "images/demo_presfso.png?raw=true/">
   
-<img src = "images/nondemo_presfo.png?raw=true/">
+<img src = "images/nondemo_presfso.png?raw=true/">
   
 It looks from these that actually aren't significant differences between any of the presidents, although the model for democracies-only is significant at the 0.05 level.
   
 ### Conclusions
 
-**TLDR;** An analysis of James Comey’s testimony before the U.S. Senate Intelligence Committee in June 2017 using natural language processing (NLP) techniques provides an example through which to explore the use of these techniques on court transcripts. 
-- NLP techniques may be able to provide findings complementary to qualitative research - they can allow for large volumes to be analyzed simultaneously using a consistent framework and remove visual sources of bias.  
-- A word frequency exploration of Comey’s testimony shows more proper noun use among Democratic senators, less specificity among Republican senators’ questions, and more uncertainty and personally-centered words in Comey’s replies. 
-- Sentiment analysis using four different tools suggests that Comey’s statements are less neutral than senators’ questions from either party, and that the dominance of his statements is also lower. However, quoting of written testimony during questioning may be a confounding factor.  
-- Across three classification machine learning models (Random Forest Classifier, Support Vector Machines, and Multinomial Naïve Bayes), the accuracy of classifying senators as Democrats or Republicans based on their questioning reaches at most 0.68, suggesting that the questioning style of senators is not perfectly differentiable by party, and that oversampling may have potentially large confounding effects.
+**TLDR;** An analysis of ambassadorial qualifications by regime type of host country (democracy or non-democracy) suggests:
+- Ambsassadors to non-democracies are more likely to be career diplomats, speak the principal language of the country, and have experience in the host region
+- While the overall share of career versus political appointees (irrespective of regime type) appeared to vary between the administrations of Ronald Reagan, George W. Bush, Bill Clinton, Obama, these differences did not reach the significance threshold. All administrations had a greater share of career diplomats appointed to non-democracies than democracies.
+- When looking only at democracies, there does appear to be a difference in the share of ambassadors who are career diplomats between administrations.
+- A closer look into how this practice evolved over time, and how the current president's appointments compare to those of his predecessors would be interesting next steps.
